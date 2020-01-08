@@ -1,1 +1,38 @@
-<body> hello, world</body>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>共通部分をパーツ化させる</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $(".l_header").load("header.html");
+      $(".l_main").load("main.html");
+      $(".l_footer").load("footer.html");
+    });
+  </script>
+</head>
+
+<body>
+  <header class="l_header">
+    <!--ここに header.htmlが読み込まれる-->
+  </header>
+  <!-- /l_header -->
+  <div class="l_main">
+
+  <main class="l_main">
+    <!--ここに main.htmlが読み込まれる-->
+  </main>
+  <!-- /l_main -->
+  <div class="l_main">
+
+  </div>
+  <!-- /l_main -->
+  <footer class="l_footer">
+    <!--ここに footer.htmlが読み込まれる-->
+  </footer>
+  <!-- /l_footer -->
+</body>
+
+</html>
