@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>sora tanaka</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $(".l_header").load("pages/common/header.html");
+      $(".l_sns").load("pages/about/sns.html");
+      $(".l_career").load("pages/about/career.html");
+      $(".l_footer").load("pages/common/footer.html");
+    });
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <header class="l_header">
+      <!--ここに header.htmlが読み込まれる-->
+    </header>
+    <!-- /l_header -->
+
+    <main class="l_sns l_career">
+      <!--ここに about/sns.htmlが読み込まれる-->
+      <!--ここに about/career.htmlが読み込まれる-->
+    </main>
+    <!-- /l_sns l_career -->
+
+    <footer class="l_footer">
+      <!--ここに footer.htmlが読み込まれる-->
+    </footer>
+    <!-- /l_footer -->
+  </div>
+  <!-- /#wrapper -->
+  
+</body>
+</html>
